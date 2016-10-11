@@ -18,6 +18,8 @@ public class AppConst {
     public static final String BAIDU_APPID = "8582484";
     public static final int REQUEST_UI = 1;
 
+    //金山词霸key
+    public static String ICIBA_KEY = "43851D599C63A1355DBA964E24EE841B";
 
 
 }
