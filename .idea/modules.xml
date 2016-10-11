@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/FairytaleWorld.iml" filepath="$PROJECT_DIR$/FairytaleWorld.iml" />
+      <module fileurl="file://$PROJECT_DIR$/andutil/andutil.iml" filepath="$PROJECT_DIR$/andutil/andutil.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/baiduspeech/baiduspeech.iml" filepath="$PROJECT_DIR$/baiduspeech/baiduspeech.iml" />
+      <module fileurl="file://$PROJECT_DIR$/baiduvoice/baiduvoice.iml" filepath="$PROJECT_DIR$/baiduvoice/baiduvoice.iml" />
+    </modules>
+  </component>
+</project>
