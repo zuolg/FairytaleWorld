@@ -12,12 +12,10 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
-import com.z.andutil.util.T;
 import com.zuolg.fairytaleworld.R;
-import com.zuolg.fairytaleworld.baiduvoice.BaiduVoiceHelper;
 import com.zuolg.fairytaleworld.base.BaseActivity;
-import com.zuolg.fairytaleworld.global.AppConst;
 import com.zuolg.fairytaleworld.presenter.HomePresenter;
+import com.zuolg.fairytaleworld.util.BarTintUtil;
 import com.zuolg.fairytaleworld.view.HomeView;
 
 import butterknife.BindView;
@@ -46,6 +44,7 @@ public final class HomeActivity extends BaseActivity implements HomeView, Naviga
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        BarTintUtil.setTintColor(this, R.color.colorPrimary);
         setContentView(R.layout.main_home);
         ButterKnife.bind(this);
 
@@ -57,7 +56,13 @@ public final class HomeActivity extends BaseActivity implements HomeView, Naviga
             @Override
             public void onClick(View view) {
                 //点击开启百度语音识别
-                BaiduVoiceHelper.startBaiduVoiceDialogForResult(HomeActivity.this, AppConst.BAIDU_APIKEY, AppConst.BAIDU_SECRET, AppConst.REQUEST_UI);
+                Intent intent = new Intent();
+                intent.setClass(mContext,IcibaActivity.class);
+                startActivity(intent);
+
+
+
+                //BaiduVoiceHelper.startBaiduVoiceDialogForResult(HomeActivity.this, AppConst.BAIDU_APIKEY, AppConst.BAIDU_SECRET, AppConst.REQUEST_UI);
             }
         });
 
@@ -184,26 +189,32 @@ public final class HomeActivity extends BaseActivity implements HomeView, Naviga
         getSupportFragmentManager().beginTransaction().replace(R.id.frame_content, new ShareActivity()).commit();
         toolbar.setTitle(R.string.nav_share);
     }
+
     private void switchToSettings() {
         getSupportFragmentManager().beginTransaction().replace(R.id.frame_content, new SettingsActivity()).commit();
         toolbar.setTitle(R.string.nav_settings);
     }
+
     private void switchToLetter() {
         getSupportFragmentManager().beginTransaction().replace(R.id.frame_content, new LetterActivity()).commit();
         toolbar.setTitle(R.string.nav_letter);
     }
+
     private void switchToNumber() {
         getSupportFragmentManager().beginTransaction().replace(R.id.frame_content, new NumberActivity()).commit();
         toolbar.setTitle(R.string.nav_number);
     }
+
     private void switchToBaiduVoice() {
         getSupportFragmentManager().beginTransaction().replace(R.id.frame_content, new BaiduVoiceActivity()).commit();
         toolbar.setTitle(R.string.nav_voice);
     }
+
     private void switchToBaiduSpeech() {
         getSupportFragmentManager().beginTransaction().replace(R.id.frame_content, new BaiduSpeechActivity()).commit();
         toolbar.setTitle(R.string.nav_speech);
     }
+
     private void switchToPoetry() {
         getSupportFragmentManager().beginTransaction().replace(R.id.frame_content, new PoetryActivity()).commit();
         toolbar.setTitle(R.string.nav_poetry);

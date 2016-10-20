@@ -3,6 +3,7 @@ package com.zuolg.fairytaleworld;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
+import android.view.WindowManager;
 
 import com.zuolg.fairytaleworld.baiduspeech.BaiduSpeechDataUtil;
 import com.zuolg.fairytaleworld.base.BaseActivity;
@@ -49,6 +50,7 @@ public class SplashActivity extends BaseActivity {
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_splash);
         mStartTime = System.currentTimeMillis();//记录开始时间，
         //开始加载数据

@@ -1,13 +1,12 @@
 package com.z.andutil.util;
 
-import java.util.Properties;
-
 import android.content.Context;
+
+import java.util.Properties;
 
 /**
  * 
  * @ClassName PropUtil
- * @Description TODO
  * @author zuolangguo
  * @date 2015年12月18日 下午4:11:39
  */
@@ -16,7 +15,6 @@ public class PropUtil {
 	/**
 	 * 获取配置文件的值
 	 * @Title: getV 
-	 * @Description: TODO
 	 * @param @param mContext
 	 * @param @param key
 	 * @param @return    设定文件 
@@ -30,7 +28,6 @@ public class PropUtil {
 	/**
 	 * 获取配置文件的值
 	 * @Title: getV 
-	 * @Description: TODO
 	 * @param @param mContext
 	 * @param @param key
 	 * @param @return    设定文件 

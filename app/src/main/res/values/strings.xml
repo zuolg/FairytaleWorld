@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">童话世界</string>
+    <string name="app_name">一点功能</string>
 
     <string name="nav_voice">语音识别</string>
     <string name="nav_speech">语音朗读</string>
@@ -8,7 +8,6 @@
     <string name="nav_letter">学习字母</string>
     <string name="nav_settings">我的配置</string>
     <string name="nav_share">分享世界</string>
-
 
 
     <string name="navigation_drawer_open">Open navigation drawer</string>

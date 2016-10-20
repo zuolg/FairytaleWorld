@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-
     android:clipToPadding="false"
     android:fitsSystemWindows="true"
     tools:context=".view.impl.HomeActivity">
@@ -14,11 +14,11 @@
         android:layout_height="wrap_content"
         android:theme="@style/AppTheme.AppBarOverlay">
 
-        <include layout="@layout/ui_toolbar" />
+        <include layout="@layout/ui_toolbar"/>
 
     </android.support.design.widget.AppBarLayout>
 
-    <include layout="@layout/main_content_main" />
+    <include layout="@layout/main_content_main"/>
 
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/fab"
@@ -26,6 +26,6 @@
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|end"
         android:layout_margin="@dimen/fab_margin"
-        android:src="@android:drawable/ic_btn_speak_now" />
+        android:src="@android:drawable/ic_btn_speak_now"/>
 
 </android.support.design.widget.CoordinatorLayout>
